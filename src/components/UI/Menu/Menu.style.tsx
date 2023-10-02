@@ -69,6 +69,7 @@ const Menu = styled(AntdMenu)`
     .ant-menu-title-content > div {
       display: flex !important;
       /* justify-content: space-between; */
+      color: ${(props) => props.theme.gray70};
       align-items: center;
       gap: 28px;
     }

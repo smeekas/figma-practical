@@ -19,4 +19,7 @@ export const Button = styled(ButtonStyle)`
   &.ant-btn-lg {
     padding: 16px 32px 16px 32px;
   }
+  &.transparent {
+    background-color: transparent;
+  }
 `;

@@ -28,6 +28,10 @@ const Tag = styled(AntTag)`
     letter-spacing: 0.005em;
     /* text-align: left; */
   }
+  &.transparent {
+    background-color: #fdfdfd14;
+    color: ${(props) => props.theme.gray10};
+  }
 `;
 
 export default Tag;

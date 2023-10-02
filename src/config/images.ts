@@ -27,7 +27,9 @@ import manFromToronto from "../assets/movieCard/manFromToronto.png";
 import extraction from "../assets/movieCard/extraction.png";
 import godzilla from "../assets/movieCard/godzilla.png";
 import jumanji from "../assets/movieCard/jumanji.png";
-
+import avatar2 from "../assets/comingSoon/avatar2.png";
+import Pause from "../assets/comingSoon/Pause";
+import check from "../assets/SubCard/check.tsx";
 export const images = {
   menu: {
     discovery: discovery,
@@ -72,5 +74,12 @@ export const images = {
     extraction,
     godzilla,
     jumanji,
+  },
+  comingSoon: {
+    avatar2: avatar2,
+    pause: Pause,
+  },
+  subCard: {
+    Check: check,
   },
 };

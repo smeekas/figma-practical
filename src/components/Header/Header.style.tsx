@@ -2,12 +2,18 @@ import styled from "styled-components";
 
 const HeaderStyle = styled.header`
   padding: 16px 56px;
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.gray100};
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   display: flex;
+  &.subscribe {
+    justify-content: center;
+    padding: 22px 32px;
+
+    border-bottom: 1px solid ${(props) => props.theme.gray30};
+  }
   h1 {
     font-size: 20px;
     font-weight: 700;
@@ -35,6 +41,9 @@ const HeaderStyle = styled.header`
   .avatarContainer {
     display: flex;
     align-items: center;
+  }
+  svg {
+    stroke: ${(props) => props.theme.gray100};
   }
 `;
 export default HeaderStyle;
