@@ -1,4 +1,4 @@
-import Search from "../assets/Search";
+import Search from "../assets/search.tsx";
 import arrowDown from "../assets/arrow";
 import clock from "../assets/clock";
 import discovery from "../assets/discover";
@@ -17,10 +17,16 @@ import suggested from "../assets/suggested.png";
 import playIcon from "../assets/playIcon";
 import addToPlaylist from "../assets/addToPlaylist";
 // import { iconHoc } from "../assets/iconHoc";
-import disney from "../assets/companyLogos/disney.png";
+import disneyL from "../assets/companyLogos/disneyLight.png";
+import disneyD from "../assets/companyLogos/disneyDark.png";
+import ngcL from "../assets/companyLogos/ngcLight.png";
+import ngcD from "../assets/companyLogos/ngcDark.png";
+
+import starwarsL from "../assets/companyLogos/starwarsLight.png";
+import starwarsD from "../assets/companyLogos/starwarsDark.png";
+
 import marvel from "../assets/companyLogos/marvel.png";
-import ngc from "../assets/companyLogos/ngc.png";
-import starwars from "../assets/companyLogos/starwars.png";
+
 import batman from "../assets/continueWatching/batman.png";
 import moonKnight from "../assets/continueWatching/moonknight.png";
 import manFromToronto from "../assets/movieCard/manFromToronto.png";
@@ -60,10 +66,13 @@ export const images = {
     addToPlaylist: addToPlaylist,
   },
   companies: {
-    disney: disney,
     marvel: marvel,
-    ngc: ngc,
-    starwars: starwars,
+    disneyL: disneyL,
+    ngcL: ngcL,
+    starwarsL: starwarsL,
+    disneyD: disneyD,
+    ngcD: ngcD,
+    starwarsD: starwarsD,
   },
   continueWatching: {
     batman: batman,

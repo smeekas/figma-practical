@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TopRatedStyle = styled.div`
   padding: 32px;
-  background-color: beige;
+  /* background-color: beige; */
   & > div:nth-child(2) {
     margin-top: 40px;
   }
@@ -33,6 +33,7 @@ const TopRatedStyle = styled.div`
     font-size: 56px;
     font-weight: 600;
     line-height: 64px;
+    color: ${(props) => props.theme.gray100};
     letter-spacing: 0.005em;
   }
 `;

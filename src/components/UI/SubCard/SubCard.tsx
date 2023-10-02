@@ -14,13 +14,16 @@ type SubCardProps = {
   price: number;
   disabledIndex: number[];
   name: string;
+  recommend?: boolean;
 };
 function SubCard(props: SubCardProps) {
   return (
-    <SubCardStyle>
-      <div>
+    <SubCardStyle className={props.recommend ? "recommend" : ""}>
+      <div className="cardTitle">
         <h3>{props.name}</h3>
-        <p>${props.price}/month</p>
+        <p>
+          <span>${props.price}</span>/month
+        </p>
       </div>
       <div className="cardContent">
         <ul>
@@ -28,7 +31,7 @@ function SubCard(props: SubCardProps) {
             return (
               <li
                 className={`${
-                  !props.disabledIndex.includes(index) ? "active" : ""
+                  props.disabledIndex.includes(index) ? "disabled" : ""
                 }`}
               >
                 <images.subCard.Check />
@@ -37,7 +40,11 @@ function SubCard(props: SubCardProps) {
             );
           })}
         </ul>
-        <Button className="transparent" size="large">
+        <Button
+          // type={props.recommend ? "text" : ""}
+          className={`transparent ${props.recommend ? "recommend" : ""} `}
+          size="large"
+        >
           Get Started
         </Button>
       </div>

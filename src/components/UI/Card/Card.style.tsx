@@ -4,7 +4,7 @@ const CardStyle = styled.div`
   display: grid;
   width: 274px;
   height: fit-content;
-
+  border-radius: 16px;
   /* background-color: #003d3d; */
   gap: 16px;
   grid-template-columns: 43fr 56fr;

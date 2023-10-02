@@ -69,6 +69,7 @@ function Sidebar() {
 
   return (
     <Menu
+      className={`${colorMode.mode}`}
       onClick={(e) => {
         if (e.key === "darkMode") {
           colorMode.setMode();

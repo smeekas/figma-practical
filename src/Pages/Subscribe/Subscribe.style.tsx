@@ -7,6 +7,10 @@ const SubscribeStyle = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* background-color: ${(props) => props.theme.gray10}; */
+  /* .recommend {
+    background-color: ${(props) => props.theme.primary};
+  } */
   gap: 63px;
   .premium {
     background-color: ${(props) => props.theme.alert};
@@ -19,6 +23,10 @@ const SubscribeStyle = styled.div`
     border: none;
     letter-spacing: 0.005em;
     align-self: center;
+    &.Dark {
+      color: ${(props) => props.theme.alert};
+      background-color: ${(props) => props.theme.gray10};
+    }
   }
   & > div {
     display: flex;
@@ -46,7 +54,7 @@ const SubscribeStyle = styled.div`
   }
 
   .prices {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: row;
     gap: 32px;

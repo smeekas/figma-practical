@@ -13,7 +13,7 @@ function ComingSoonCard(props: ComingSoonCardProps) {
     <ComingSoonCardStyle>
       <img src={props.img} />
       <div className="movieContent">
-        <Tag className="chip large transparent">Coming Soon</Tag>
+        <Tag className="chip large transparent white">Coming Soon</Tag>
         <p className="title">{props.name}</p>
         <p className="date">{props.date.toISOString()}</p>
         <div className="trailer">

@@ -30,6 +30,15 @@ const Menu = styled(AntdMenu)`
   .ant-menu-submenu {
     background-color: ${(props) => props.theme.gray10} !important;
   }
+  .ant-menu-item-active {
+    color: ${(props) => props.theme.gray100} !important;
+  }
+  &.Dark .ant-menu-item {
+    color: ${(props) => props.theme.gray40};
+  }
+  &.Default .ant-menu-item {
+    color: ${(props) => props.theme.gray70};
+  }
   .ant-menu-item {
     background-color: ${(props) => props.theme.gray10} !important;
     padding-left: 28px !important;
@@ -41,7 +50,7 @@ const Menu = styled(AntdMenu)`
     line-height: 24px;
     letter-spacing: 0.005em;
     text-align: left;
-    color: ${(props) => props.theme.gray70};
+    /* color: ${(props) => props.theme.gray40}; */
     margin: 0;
     gap: 12px;
     border-radius: 0px;
@@ -49,7 +58,7 @@ const Menu = styled(AntdMenu)`
 
     &.ant-menu-item-selected,
     &.ant-menu-submenu-active {
-      color: ${(props) => props.theme.gray100};
+      color: ${(props) => props.theme.gray100} !important;
     }
     &.ant-menu-item-selected::before,
     &.ant-menu-submenu-active::before {

@@ -5,6 +5,7 @@ const MovieCardStyle = styled.div`
   width: ${(props) => props.theme.cardWidth};
   flex-direction: column;
   gap: 12px;
+  color: ${(props) => props.theme.gray100};
   .movieName {
     font-size: 16px;
     font-weight: 700;

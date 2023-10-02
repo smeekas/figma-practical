@@ -5,6 +5,7 @@ import CompnayCard from "../../components/UI/CompanyCard/CompnayCard";
 import SectionHeading from "../../components/UI/SectionHeading/SectionHeading.style";
 import Tag from "../../components/UI/Tag/Tag.style";
 import { images } from "../../config/images";
+import { useColorMode } from "../../providers/ColorMode";
 import DiscoveryStyle from "./Discovery.style";
 const data: CardProps[] = [
   {
@@ -37,6 +38,7 @@ const genres = [
   "Horror",
 ];
 const Discovery = () => {
+  const mode = useColorMode();
   return (
     <DiscoveryStyle>
       <div className="leftPage">
@@ -71,16 +73,34 @@ const Discovery = () => {
         </Suggested>
         <div className="companyList">
           <CompnayCard>
-            <img src={images.companies.disney} />
+            <img
+              src={
+                mode.mode === "Default"
+                  ? images.companies.disneyL
+                  : images.companies.disneyD
+              }
+            />
           </CompnayCard>
           <CompnayCard>
             <img src={images.companies.marvel} />
           </CompnayCard>
           <CompnayCard>
-            <img src={images.companies.starwars} />
+            <img
+              src={
+                mode.mode === "Default"
+                  ? images.companies.starwarsL
+                  : images.companies.starwarsD
+              }
+            />
           </CompnayCard>
           <CompnayCard>
-            <img src={images.companies.ngc} />
+            <img
+              src={
+                mode.mode === "Default"
+                  ? images.companies.ngcL
+                  : images.companies.ngcD
+              }
+            />
           </CompnayCard>
           {/* <CompnayCard>
             <img src={images.companies.ngc} />

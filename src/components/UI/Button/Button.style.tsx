@@ -22,4 +22,12 @@ export const Button = styled(ButtonStyle)`
   &.transparent {
     background-color: transparent;
   }
+  &.recommend {
+    border-color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.white};
+  }
+  &.recommend:hover {
+    background-color: ${(props) => props.theme.white} !important;
+    color: ${(props) => props.theme.primary} !important;
+  }
 `;

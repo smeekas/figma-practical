@@ -32,6 +32,9 @@ const Tag = styled(AntTag)`
     background-color: #fdfdfd14;
     color: ${(props) => props.theme.gray10};
   }
+  &.white {
+    color: ${(props) => props.theme.white};
+  }
 `;
 
 export default Tag;

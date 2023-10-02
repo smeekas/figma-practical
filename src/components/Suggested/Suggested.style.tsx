@@ -16,7 +16,7 @@ const Suggested = styled.div`
       font-weight: 700;
       line-height: 40px;
       letter-spacing: 0.005em;
-      color: ${(props) => props.theme.gray10};
+      color: ${(props) => props.theme.white};
       /* text-align: left; */
     }
     .buttonGroup {

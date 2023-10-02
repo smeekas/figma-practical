@@ -1,5 +1,6 @@
 import styled from "styled-components";
 const ComingSoonCardStyle = styled.div`
+  color: ${(props) => props.theme.white};
   position: relative;
   .movieContent {
     position: absolute;
@@ -17,7 +18,6 @@ const ComingSoonCardStyle = styled.div`
     line-height: 40px;
     letter-spacing: 0.005em;
     margin-top: 12px;
-    color: ${(props) => props.theme.gray10};
   }
   .date {
     color: ${(props) => props.theme.gray60};
@@ -34,7 +34,7 @@ const ComingSoonCardStyle = styled.div`
     display: flex;
     align-items: center;
     gap: 8px;
-    color: ${(props) => props.theme.gray10};
+    /* color: ${(props) => props.theme.gray10}; */
   }
 `;
 export default ComingSoonCardStyle;

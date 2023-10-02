@@ -6,6 +6,6 @@ const SectionHeading = styled.p`
   line-height: 28px;
   letter-spacing: 0.005em;
   margin-bottom: 24px;
-  ${(props) => props.theme.gray100}
+  color: ${(props) => props.theme.gray100};
 `;
 export default SectionHeading;

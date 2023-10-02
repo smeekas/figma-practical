@@ -7,6 +7,7 @@ import TopRated from "./Pages/TopRated/TopRated";
 import ComingSoon from "./Pages/ComingSoon/ComingSoon";
 import Subscribe from "./Pages/Subscribe/Subscribe";
 import useHeaderChange from "./hook/useHeaderChange";
+import { useColorMode } from "./providers/ColorMode";
 
 // const data: CardProps = {
 //   image: images.topMovies.redemption,
@@ -17,10 +18,11 @@ import useHeaderChange from "./hook/useHeaderChange";
 
 function App() {
   const headerChange = useHeaderChange();
+  const mode = useColorMode();
   return (
     <>
       <Header />
-      <AppStyle className={headerChange ? "subscribe" : ""}>
+      <AppStyle className={`${headerChange ? "subscribe" : ""} ${mode.mode}`}>
         {!headerChange && <Sidebar />}
 
         <Routes>

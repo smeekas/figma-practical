@@ -12,7 +12,7 @@ const DiscoveryStyle = styled.div`
     padding-left: 32px;
     padding-right: 32px;
 
-    background-color: beige;
+    /* background-color: beige; */
     flex-direction: column;
   }
   .companyList {

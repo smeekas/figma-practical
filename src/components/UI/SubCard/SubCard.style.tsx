@@ -1,4 +1,3 @@
-import { theme } from "antd";
 import styled from "styled-components";
 
 const SubCardStyle = styled.div`
@@ -6,6 +5,38 @@ const SubCardStyle = styled.div`
   display: flex;
   gap: 32px;
   background-color: ${(props) => props.theme.gray10};
+  color: ${(props) => props.theme.gray100};
+  border: 1px solid ${(props) => props.theme.gray30};
+  .cardTitle {
+    p {
+      margin-top: 12px;
+      font-weight: 600;
+      color: ${(props) => props.theme.gray60};
+    }
+    span {
+      font-size: 40px;
+      color: ${(props) => props.theme.gray100};
+    }
+  }
+  &.recommend {
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.white};
+    .svgCircle {
+      fill: ${(props) => props.theme.gray10};
+    }
+    .svgCheck {
+      stroke: ${(props) => props.theme.white};
+    }
+    .cardTitle {
+      p {
+        color: ${((props) => props.theme.lightPrimary)};
+      }
+      span {
+        color: ${(props) => props.theme.white};
+      }
+    }
+  }
+
   border-radius: 24px;
   flex-direction: column;
   h3 {
@@ -22,7 +53,7 @@ const SubCardStyle = styled.div`
     padding-right: 40px;
     flex-direction: column;
     padding-top: 32px;
-    border-top: 1px solid red;
+    border-top: 1px solid ${(props) => props.theme.gray30};
   }
   li {
     display: flex;
@@ -34,6 +65,12 @@ const SubCardStyle = styled.div`
     line-height: 24px;
     color: ${(props) => props.theme.gray100};
     letter-spacing: 0.005em;
+  }
+  li.disabled {
+    color: ${(props) => props.theme.gray40};
+  }
+  &.recommend li {
+    color: ${(props) => props.theme.white};
   }
   .cardContent {
     display: flex;
