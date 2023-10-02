@@ -13,9 +13,9 @@ const Suggested = styled.div`
     margin-left: 40px;
     h2 {
       font-size: 32px;
-      font-weight: 700;
+        font-weight: ${(props) => props.theme.fontWeightLg};
       line-height: 40px;
-      letter-spacing: 0.005em;
+       
       color: ${(props) => props.theme.white};
       /* text-align: left; */
     }
@@ -29,10 +29,10 @@ const Suggested = styled.div`
     }
     .details {
       font-size: 14px;
-      font-weight: 500;
+       font-weight: ${(props) => props.theme.fontWeightSm};
       line-height: 24px;
       margin-top: 8px;
-      letter-spacing: 0.005em;
+       
 
       color: ${(props) => props.theme.gray60};
     }

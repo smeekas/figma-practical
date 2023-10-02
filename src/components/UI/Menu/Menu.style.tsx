@@ -12,9 +12,9 @@ const Menu = styled(AntdMenu)`
     padding-left: 32px !important;
     margin: 0;
     font-size: 16px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
     color: ${(props) => props.theme.disabledTextColor};
     text-transform: uppercase;
     text-align: left;
@@ -46,9 +46,9 @@ const Menu = styled(AntdMenu)`
     margin-top: 16px !important;
     margin-bottom: 16px !important;
 
-    font-weight: 600;
+     font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
     text-align: left;
     /* color: ${(props) => props.theme.gray40}; */
     margin: 0;

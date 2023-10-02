@@ -14,23 +14,23 @@ const ComingSoonCardStyle = styled.div`
   }
   .title {
     font-size: 32px;
-    font-weight: 700;
+      font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 40px;
-    letter-spacing: 0.005em;
+     
     margin-top: 12px;
   }
   .date {
     color: ${(props) => props.theme.gray60};
     font-size: 14px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     margin-top: 8px;
   }
   .trailer {
     margin-top: 24px;
     font-size: 16px;
-    font-weight: 600;
+     font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
     display: flex;
     align-items: center;
     gap: 8px;

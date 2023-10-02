@@ -18,10 +18,10 @@ const SubscribeStyle = styled.div`
     border-radius: 16px;
     padding: 8px 16px;
     font-size: 14px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
     border: none;
-    letter-spacing: 0.005em;
+     
     align-self: center;
     &.Dark {
       color: ${(props) => props.theme.alert};
@@ -36,9 +36,9 @@ const SubscribeStyle = styled.div`
   }
   .title {
     font-size: 40px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 48px;
-    letter-spacing: 0.005em;
+     
     color: ${(props) => props.theme.gray100};
   }
 
@@ -47,9 +47,9 @@ const SubscribeStyle = styled.div`
     width: 300px;
     align-self: center;
     text-align: center;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
     color: ${(props) => props.theme.gray70};
   }
 

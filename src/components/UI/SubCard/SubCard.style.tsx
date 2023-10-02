@@ -10,7 +10,7 @@ const SubCardStyle = styled.div`
   .cardTitle {
     p {
       margin-top: 12px;
-      font-weight: 600;
+       font-weight: ${(props) => props.theme.fontWeightMd};
       color: ${(props) => props.theme.gray60};
     }
     span {
@@ -41,9 +41,9 @@ const SubCardStyle = styled.div`
   flex-direction: column;
   h3 {
     font-size: 20px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 28px;
-    letter-spacing: 0.005em;
+     
   }
   ul {
     list-style: none;
@@ -61,10 +61,10 @@ const SubCardStyle = styled.div`
     gap: 12px;
 
     font-size: 16px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
     color: ${(props) => props.theme.gray100};
-    letter-spacing: 0.005em;
+     
   }
   li.disabled {
     color: ${(props) => props.theme.gray40};

@@ -31,10 +31,10 @@ const TopRatedStyle = styled.div`
   }
   .topRatedCard p {
     font-size: 56px;
-    font-weight: 600;
+     font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 64px;
     color: ${(props) => props.theme.gray100};
-    letter-spacing: 0.005em;
+     
   }
 `;
 

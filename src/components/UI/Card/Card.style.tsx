@@ -23,20 +23,20 @@ const CardStyle = styled.div`
     /* white-space: nowrap; */
     overflow: hidden;
     font-size: 16px;
-    font-weight: 700;
+      font-weight: ${(props) => props.theme.fontWeightLg};
     color: ${(props) => props.theme.gray100};
 
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
   }
   .genre {
     display: flex;
     align-items: center;
     color: ${(props) => props.theme.gray70};
     font-size: 12px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
-    letter-spacing: 0.005em;
+     
     text-overflow: ellipsis;
     gap: 4px;
   }

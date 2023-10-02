@@ -1,9 +1,8 @@
 export interface ColorValues {
   primary: string;
-  lightPrimary: string;
   disabledBg: string;
   disabledTextColor: string;
-  white: string;
+  // white: string;
   gray10: string;
   gray100: string;
   gray70: string;
@@ -11,12 +10,28 @@ export interface ColorValues {
   backgroundColor: string;
   gray30: string;
   gray40: string;
-  cardWidth: string;
+  // cardWidth: string;
   alert: string;
   cardColor: string;
 }
+export interface CommonVariables {
+  cardWidth: string;
+  white: string;
+  lightPrimary: string;
+  fontWeightSm: string;
+  fontWeightMd: string;
+  fontWeightLg: string;
+}
+const commonVariables: CommonVariables = {
+  white: "#fff",
+  cardWidth: "264px",
+  lightPrimary: "#D6A8EC",
+  fontWeightLg: "700",
+  fontWeightMd: "600",
+  fontWeightSm: "500",
+};
 export type TypeOfTheme = "Default" | "Dark";
-export const CustomTheme: Record<TypeOfTheme, ColorValues> = {
+export const CustomTheme: Record<TypeOfTheme, ColorValues & CommonVariables> = {
   Default: {
     primary: "#B43FEB",
     gray100: "#171725",
@@ -25,16 +40,12 @@ export const CustomTheme: Record<TypeOfTheme, ColorValues> = {
     gray40: "#d1d8dd",
     gray30: "#e3e9ed",
     gray10: "#F9F9F9",
-    lightPrimary: "#D6A8EC",
     backgroundColor: "#FFFFFF",
-
     disabledBg: "#ECF1F6",
     disabledTextColor: "#9CA4AB",
-    white: "#fff",
-
-    cardWidth: "264px",
     alert: "#FFCD1A",
     cardColor: "#e3e9ed",
+    ...commonVariables,
   },
   Dark: {
     primary: "#B43FEB",
@@ -44,15 +55,11 @@ export const CustomTheme: Record<TypeOfTheme, ColorValues> = {
     gray40: "#78828A",
     gray30: "#66707A",
     gray10: "#171725",
-    lightPrimary: "#D6A8EC",
     backgroundColor: "#0D0C0F",
-
     disabledBg: "#171725",
     disabledTextColor: "#66707A",
-    white: "#fff",
-
-    cardWidth: "264px",
     alert: "#FFCD1A",
     cardColor: "#66707A",
+    ...commonVariables,
   },
 };

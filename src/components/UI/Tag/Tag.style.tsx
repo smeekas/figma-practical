@@ -13,9 +13,9 @@ const Tag = styled(AntTag)`
     gap: 8px;
     background-color: #fdfdfd14;
     font-size: 12px;
-    font-weight: 500;
+     font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
-    letter-spacing: 0.005em;
+     
     /* text-align: left; */
   }
   &.large {
@@ -23,9 +23,9 @@ const Tag = styled(AntTag)`
     color: ${(props) => props.theme.gray100};
     border-radius: 16px;
     font-size: 14px;
-    font-weight: 600;
+     font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
-    letter-spacing: 0.005em;
+     
     /* text-align: left; */
   }
   &.transparent {

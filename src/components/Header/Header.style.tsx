@@ -16,9 +16,9 @@ const HeaderStyle = styled.header`
   }
   h1 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 28px;
-    letter-spacing: 0.005em;
+
     /* color: ${(props) => props.theme.gray100}; */
     text-align: left;
   }
