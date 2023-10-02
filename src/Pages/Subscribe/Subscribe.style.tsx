@@ -19,7 +19,7 @@ const SubscribeStyle = styled.div`
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 24px;
     border: none;
     letter-spacing: 0.005em;
     align-self: center;

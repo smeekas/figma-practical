@@ -30,7 +30,7 @@ const Suggested = styled.div`
     .details {
       font-size: 14px;
       font-weight: 500;
-      line-height: 22px;
+      line-height: 24px;
       margin-top: 8px;
       letter-spacing: 0.005em;
 

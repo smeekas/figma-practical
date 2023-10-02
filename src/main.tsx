@@ -5,13 +5,17 @@ import "./index.css";
 import ColorMode from "./providers/ColorMode.tsx";
 import { Providers } from "./providers/Providers.tsx";
 import { BrowserRouter } from "react-router-dom";
+import GlobalStyle from "./GlobalStyle.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ColorMode>
         <Providers>
-          <App />
+          <>
+            <GlobalStyle />
+            <App />
+          </>
         </Providers>
       </ColorMode>
     </BrowserRouter>

@@ -24,7 +24,7 @@ const Tag = styled(AntTag)`
     border-radius: 16px;
     font-size: 14px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: 0.005em;
     /* text-align: left; */
   }
