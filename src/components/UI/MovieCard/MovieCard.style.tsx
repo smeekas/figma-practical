@@ -7,7 +7,7 @@ const MovieCardStyle = styled.div`
   gap: 12px;
   color: ${(props) => props.theme.gray100};
   .movieName {
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
       font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 24px;
      
@@ -17,7 +17,7 @@ const MovieCardStyle = styled.div`
     flex-direction: row;
     gap: 4px;
     align-items: center;
-    font-size: 12px;
+    font-size: ${(props) => props.theme.fontSizeS};
      font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 20px;
      
@@ -29,7 +29,7 @@ const MovieCardStyle = styled.div`
     align-items: center;
   }
   .movieMeta {
-    font-size: 12px;
+    font-size: ${(props) => props.theme.fontSizeS};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
      

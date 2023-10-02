@@ -30,7 +30,7 @@ const TopRatedStyle = styled.div`
     gap: 16px;
   }
   .topRatedCard p {
-    font-size: 56px;
+    font-size: ${(props) => props.theme.fontSizeXxl};
      font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 64px;
     color: ${(props) => props.theme.gray100};

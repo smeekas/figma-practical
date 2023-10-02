@@ -22,7 +22,7 @@ const CardStyle = styled.div`
     text-overflow: ellipsis;
     /* white-space: nowrap; */
     overflow: hidden;
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
       font-weight: ${(props) => props.theme.fontWeightLg};
     color: ${(props) => props.theme.gray100};
 
@@ -33,7 +33,7 @@ const CardStyle = styled.div`
     display: flex;
     align-items: center;
     color: ${(props) => props.theme.gray70};
-    font-size: 12px;
+    font-size: ${(props) => props.theme.fontSizeS};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
      

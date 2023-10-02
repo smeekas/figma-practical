@@ -13,7 +13,7 @@ const ComingSoonCardStyle = styled.div`
     height: 366px;
   }
   .title {
-    font-size: 32px;
+    font-size: ${(props) => props.theme.fontSizeL};
       font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 40px;
      
@@ -21,13 +21,13 @@ const ComingSoonCardStyle = styled.div`
   }
   .date {
     color: ${(props) => props.theme.gray60};
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSizeXs};
      font-weight: ${(props) => props.theme.fontWeightSm};
     margin-top: 8px;
   }
   .trailer {
     margin-top: 24px;
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
      font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
      

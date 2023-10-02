@@ -12,7 +12,7 @@ const Suggested = styled.div`
     margin-bottom: 50px;
     margin-left: 40px;
     h2 {
-      font-size: 32px;
+      font-size: ${(props) => props.theme.fontSizeL};
         font-weight: ${(props) => props.theme.fontWeightLg};
       line-height: 40px;
        
@@ -28,7 +28,7 @@ const Suggested = styled.div`
       color: ${(props) => props.theme.white};
     }
     .details {
-      font-size: 14px;
+      font-size: ${(props) => props.theme.fontSizeXs};
        font-weight: ${(props) => props.theme.fontWeightSm};
       line-height: 24px;
       margin-top: 8px;

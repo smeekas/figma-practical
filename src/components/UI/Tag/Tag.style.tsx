@@ -12,7 +12,7 @@ const Tag = styled(AntTag)`
     border: none;
     gap: 8px;
     background-color: #fdfdfd14;
-    font-size: 12px;
+    font-size: ${(props) => props.theme.fontSizeS};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
      
@@ -22,7 +22,7 @@ const Tag = styled(AntTag)`
     background-color: ${(props) => props.theme.gray10};
     color: ${(props) => props.theme.gray100};
     border-radius: 16px;
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSizeXs};
      font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
      

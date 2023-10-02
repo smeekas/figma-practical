@@ -21,6 +21,20 @@ export interface CommonVariables {
   fontWeightSm: string;
   fontWeightMd: string;
   fontWeightLg: string;
+  lineHeightXl: string;
+  lineHeightL: string;
+  lineHeightXm: string;
+  lineHeightM: string;
+  lineHeightXs: string;
+  lineHeightS: string;
+
+  fontSizeXxl: string;
+  fontSizeXl: string;
+  fontSizeL: string;
+  fontSizeXm: string;
+  fontSizeM: string;
+  fontSizeXs: string;
+  fontSizeS: string;
 }
 const commonVariables: CommonVariables = {
   white: "#fff",
@@ -29,6 +43,21 @@ const commonVariables: CommonVariables = {
   fontWeightLg: "700",
   fontWeightMd: "600",
   fontWeightSm: "500",
+
+  lineHeightXl: "64px",
+  lineHeightL: "48px",
+  lineHeightXm: "40px",
+  lineHeightM: "28px",
+  lineHeightXs: "24px",
+  lineHeightS: "20px",
+
+  fontSizeXxl: "56px",
+  fontSizeXl: "40px",
+  fontSizeL: "32px",
+  fontSizeXm: "20px",
+  fontSizeM: "16px",
+  fontSizeXs: "14px",
+  fontSizeS: "12px",
 };
 export type TypeOfTheme = "Default" | "Dark";
 export const CustomTheme: Record<TypeOfTheme, ColorValues & CommonVariables> = {

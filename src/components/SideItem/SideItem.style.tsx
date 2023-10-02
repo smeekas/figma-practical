@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideItemStyle = styled.p`
-  font-size: 16px;
+  font-size: ${(props) => props.theme.fontSizeM};
    font-weight: ${(props) => props.theme.fontWeightMd};
   line-height: 24px;
    

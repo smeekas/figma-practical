@@ -14,7 +14,7 @@ const SubCardStyle = styled.div`
       color: ${(props) => props.theme.gray60};
     }
     span {
-      font-size: 40px;
+      font-size: ${(props) => props.theme.fontSizeXl};
       color: ${(props) => props.theme.gray100};
     }
   }
@@ -40,7 +40,7 @@ const SubCardStyle = styled.div`
   border-radius: 24px;
   flex-direction: column;
   h3 {
-    font-size: 20px;
+    font-size: ${(props) => props.theme.fontSizeXm};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 28px;
      
@@ -60,7 +60,7 @@ const SubCardStyle = styled.div`
     flex-direction: row;
     gap: 12px;
 
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
     color: ${(props) => props.theme.gray100};

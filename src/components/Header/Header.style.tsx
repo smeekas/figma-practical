@@ -15,7 +15,7 @@ const HeaderStyle = styled.header`
     border-bottom: 1px solid ${(props) => props.theme.gray30};
   }
   h1 {
-    font-size: 20px;
+    font-size: ${(props) => props.theme.fontSizeXm};
     font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 28px;
 

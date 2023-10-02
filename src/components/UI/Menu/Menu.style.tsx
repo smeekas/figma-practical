@@ -11,7 +11,7 @@ const Menu = styled(AntdMenu)`
     background-color: ${(props) => props.theme.gray10};
     padding-left: 32px !important;
     margin: 0;
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
      
@@ -42,7 +42,7 @@ const Menu = styled(AntdMenu)`
   .ant-menu-item {
     background-color: ${(props) => props.theme.gray10} !important;
     padding-left: 28px !important;
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
     margin-top: 16px !important;
     margin-bottom: 16px !important;
 

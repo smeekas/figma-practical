@@ -17,7 +17,7 @@ const SubscribeStyle = styled.div`
     color: ${(props) => props.theme.gray100};
     border-radius: 16px;
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSizeXs};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
     border: none;
@@ -35,7 +35,7 @@ const SubscribeStyle = styled.div`
     flex-direction: column;
   }
   .title {
-    font-size: 40px;
+    font-size: ${(props) => props.theme.fontSizeXl};
      font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 48px;
      
@@ -43,7 +43,7 @@ const SubscribeStyle = styled.div`
   }
 
   .description {
-    font-size: 16px;
+    font-size: ${(props) => props.theme.fontSizeM};
     width: 300px;
     align-self: center;
     text-align: center;
