@@ -1,4 +1,3 @@
-import React from "react";
 import TopRatedStyle from "./TopRated.style";
 import SectionHeading from "../../components/UI/SectionHeading/SectionHeading.style";
 import Card, { CardProps } from "../../components/UI/Card/Card";

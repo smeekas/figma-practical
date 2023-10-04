@@ -12,9 +12,9 @@ const Menu = styled(AntdMenu)`
     padding-left: 32px !important;
     margin: 0;
     font-size: ${(props) => props.theme.fontSizeM};
-     font-weight: ${(props) => props.theme.fontWeightSm};
+    font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 24px;
-     
+
     color: ${(props) => props.theme.disabledTextColor};
     text-transform: uppercase;
     text-align: left;
@@ -45,13 +45,13 @@ const Menu = styled(AntdMenu)`
     font-size: ${(props) => props.theme.fontSizeM};
     margin-top: 16px !important;
     margin-bottom: 16px !important;
-
-     font-weight: ${(props) => props.theme.fontWeightMd};
+    margin-inline-start: 0 !important;
+    font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 24px;
-     
+
     text-align: left;
     /* color: ${(props) => props.theme.gray40}; */
-    margin: 0;
+    /* margin: 0; */
     gap: 12px;
     border-radius: 0px;
     position: relative;
@@ -75,6 +75,7 @@ const Menu = styled(AntdMenu)`
       stroke-width: 1px;
       transition: all 0.1s;
     }
+
     .ant-menu-title-content > div {
       display: flex !important;
       /* justify-content: space-between; */

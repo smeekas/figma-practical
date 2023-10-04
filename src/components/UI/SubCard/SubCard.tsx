@@ -1,4 +1,3 @@
-import React from "react";
 import SubCardStyle from "./SubCard.style";
 import { images } from "../../../config/images";
 import { Button } from "../Button/Button.style";

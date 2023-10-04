@@ -1,4 +1,3 @@
-import React from "react";
 import SubscribeStyle from "./Subscribe.style";
 import SubCard from "../../components/UI/SubCard/SubCard";
 import { useColorMode } from "../../providers/ColorMode";

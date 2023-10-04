@@ -1,4 +1,3 @@
-import React from "react";
 import CardStyle from "./Card.style";
 import { images } from "../../../config/images";
 import Tag from "../Tag/Tag.style";

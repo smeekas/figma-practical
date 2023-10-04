@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HeaderStyle from "./Header.style";
 import { images } from "../../config/images";
 import { Badge, Button, Input } from "antd";

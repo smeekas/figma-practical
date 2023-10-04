@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import ContinueWatchingStyle from "./ContinueWatching.style";
 import { images } from "../../config/images";
 import videoSrc from "../../assets/video.mp4";

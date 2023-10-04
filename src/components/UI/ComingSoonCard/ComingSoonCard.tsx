@@ -1,4 +1,3 @@
-import React from "react";
 import ComingSoonCardStyle from "./ComingSoonCard.style";
 import Tag from "../Tag/Tag.style";
 import { images } from "../../../config/images";

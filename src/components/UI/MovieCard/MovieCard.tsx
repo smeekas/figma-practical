@@ -1,4 +1,3 @@
-import React from "react";
 import MovieCardStyle from "./MovieCard.style";
 import { images } from "../../../config/images";
 export type MovieCardProps = {

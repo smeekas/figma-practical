@@ -1,4 +1,3 @@
-import React from "react";
 import { SideItemStyle } from "./SideItem.style";
 
 function SideItem({ children }: { children: string }) {
