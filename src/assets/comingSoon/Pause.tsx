@@ -1,8 +1,9 @@
 import React from "react";
 
-function Pause() {
+function Pause(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="24"
       height="24"
       viewBox="0 0 24 24"

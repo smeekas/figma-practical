@@ -8,19 +8,18 @@ const MovieCardStyle = styled.div`
   color: ${(props) => props.theme.gray100};
   .movieName {
     font-size: ${(props) => props.theme.fontSizeM};
-      font-weight: ${(props) => props.theme.fontWeightLg};
+    font-weight: ${(props) => props.theme.fontWeightLg};
     line-height: 24px;
-     
   }
+
   .movieRating {
     display: flex;
     flex-direction: row;
     gap: 4px;
     align-items: center;
     font-size: ${(props) => props.theme.fontSizeS};
-     font-weight: ${(props) => props.theme.fontWeightMd};
+    font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 20px;
-     
   }
   .movieRatingAndType {
     margin-top: 12px;
@@ -30,9 +29,9 @@ const MovieCardStyle = styled.div`
   }
   .movieMeta {
     font-size: ${(props) => props.theme.fontSizeS};
-     font-weight: ${(props) => props.theme.fontWeightSm};
+    font-weight: ${(props) => props.theme.fontWeightSm};
     line-height: 20px;
-     
+
     color: ${(props) => props.theme.gray70};
   }
 `;

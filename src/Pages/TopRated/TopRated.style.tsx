@@ -6,18 +6,21 @@ const TopRatedStyle = styled.div`
   & > div:nth-child(2) {
     margin-top: 40px;
   }
+  /* overflow: hidden; */
   /* width: 100%;
   max-width: 100%; */
   .movieList {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     gap: 24px;
-    overflow-x: scroll;
-    width: 100%;
-    max-width: 1200px;
+    /* overflow-x: scroll; */
+    /* max-width: 100%; */
     margin-bottom: 16px;
   }
-
+  .flexList {
+    overflow: hidden;
+    max-width: 100%;
+  }
   .topRatedList {
     display: flex;
     flex-direction: row;
@@ -31,10 +34,9 @@ const TopRatedStyle = styled.div`
   }
   .topRatedCard p {
     font-size: ${(props) => props.theme.fontSizeXxl};
-     font-weight: ${(props) => props.theme.fontWeightMd};
+    font-weight: ${(props) => props.theme.fontWeightMd};
     line-height: 64px;
     color: ${(props) => props.theme.gray100};
-     
   }
 `;
 

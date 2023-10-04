@@ -8,8 +8,10 @@ const CompnayCard = styled.div`
   justify-content: center;
   align-items: center;
   /* padding: 16px 32px 16px 32px; */
-  width: 177px;
-  height: 84px;
+  max-width: 177px;
+  max-height: 84px;
+  min-height: 84px;
+  min-width: 177px;
   border-radius: 16px;
   border: 1px;
   border-style: solid;

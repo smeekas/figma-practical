@@ -1,7 +1,10 @@
+import ContinueWatching from "../../components/ContinueWatching/ContinueWatching";
 import Suggested from "../../components/Suggested/Suggested.style";
 import { Button } from "../../components/UI/Button/Button.style";
 import Card, { CardProps } from "../../components/UI/Card/Card";
 import CompnayCard from "../../components/UI/CompanyCard/CompnayCard";
+import CorouselList from "../../components/UI/CorouselList/CorouselList";
+import CorouselListContainer from "../../components/UI/CorouselListContainer/CorouselListContainer.style";
 import SectionHeading from "../../components/UI/SectionHeading/SectionHeading.style";
 import Tag from "../../components/UI/Tag/Tag.style";
 import { images } from "../../config/images";
@@ -37,6 +40,36 @@ const genres = [
   "Mystery",
   "Horror",
 ];
+const companyList = [
+  {
+    light: images.companies.disneyL,
+    dark: images.companies.disneyD,
+  },
+  {
+    light: images.companies.ngcL,
+    dark: images.companies.ngcD,
+  },
+  {
+    light: images.companies.starwarsL,
+    dark: images.companies.starwarsD,
+  },
+  {
+    light: images.companies.marvel,
+    dark: images.companies.marvel,
+  },
+  {
+    light: images.companies.starwarsL,
+    dark: images.companies.starwarsD,
+  },
+  {
+    light: images.companies.starwarsL,
+    dark: images.companies.starwarsD,
+  },
+  {
+    light: images.companies.marvel,
+    dark: images.companies.marvel,
+  },
+];
 const Discovery = () => {
   const mode = useColorMode();
   return (
@@ -62,6 +95,7 @@ const Discovery = () => {
                 >
                   Watch Trailer
                 </Button>
+
                 <div className="button">
                   {" "}
                   <images.discoveryPage.addToPlaylist />
@@ -71,61 +105,62 @@ const Discovery = () => {
             </div>
           </div>
         </Suggested>
-        <div className="companyList">
-          <CompnayCard>
-            <img
-              src={
-                mode.mode === "Default"
-                  ? images.companies.disneyL
-                  : images.companies.disneyD
-              }
-            />
-          </CompnayCard>
-          <CompnayCard>
-            <img src={images.companies.marvel} />
-          </CompnayCard>
-          <CompnayCard>
-            <img
-              src={
-                mode.mode === "Default"
-                  ? images.companies.starwarsL
-                  : images.companies.starwarsD
-              }
-            />
-          </CompnayCard>
-          <CompnayCard>
-            <img
-              src={
-                mode.mode === "Default"
-                  ? images.companies.ngcL
-                  : images.companies.ngcD
-              }
-            />
-          </CompnayCard>
-          {/* <CompnayCard>
-            <img src={images.companies.ngc} />
-          </CompnayCard> */}
-        </div>
+        <CorouselListContainer>
+          <CorouselList scrollBtn className="companyList">
+            {companyList.map((companyItem) => {
+              return (
+                <CompnayCard>
+                  <img
+                    src={
+                      mode.mode == "Default"
+                        ? companyItem.light
+                        : companyItem.dark
+                    }
+                  />
+                </CompnayCard>
+              );
+            })}
+          </CorouselList>
+        </CorouselListContainer>
+
         <div className="continueWatching">
           <SectionHeading>Continue Watching</SectionHeading>
-          <div className="watchingList">
-            <div>
-              <img src={images.continueWatching.batman} />
-            </div>
-            <div>
-              <img src={images.continueWatching.moonKnight} />
-            </div>
-          </div>
+          <CorouselListContainer>
+            <CorouselList scrollBtn className="watchingList">
+              <ContinueWatching
+                image={images.continueWatching.batman}
+                year={2022}
+                name="Batman"
+              />
+              <ContinueWatching
+                image={images.continueWatching.moonKnight}
+                year={2022}
+                name="Moon Knight"
+              />
+              <ContinueWatching
+                image={images.continueWatching.moonKnight}
+                year={2022}
+                name="Moon Knight"
+              />
+              {/* <ContinueWatching
+              image={images.continueWatching.moonKnight}
+              year={2022}
+              name="Moon Knight"
+            /> */}
+            </CorouselList>
+          </CorouselListContainer>
         </div>
       </div>
       <div className="rightPage">
         <div>
           <SectionHeading>Top Movies</SectionHeading>
+          {/* <div> */}
           <div className="movieList">
             {data.map((movieItem) => {
               return <Card key={movieItem.name} {...movieItem} />;
             })}
             <Button size="large">See All</Button>
+            {/* </div> */}
           </div>
         </div>
         <div>

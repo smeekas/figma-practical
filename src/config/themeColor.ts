@@ -35,11 +35,16 @@ export interface CommonVariables {
   fontSizeM: string;
   fontSizeXs: string;
   fontSizeS: string;
+
+  lightWhite: string;
+  gray: string;
 }
 const commonVariables: CommonVariables = {
   white: "#fff",
   cardWidth: "264px",
   lightPrimary: "#D6A8EC",
+  lightWhite: "#F9F9F9",
+  gray: "#78828A",
   fontWeightLg: "700",
   fontWeightMd: "600",
   fontWeightSm: "500",

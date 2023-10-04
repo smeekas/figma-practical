@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderStyle from "./Header.style";
 import { images } from "../../config/images";
-import { Badge, Button } from "antd";
+import { Badge, Button, Input } from "antd";
 import Avatar from "../UI/Avatar/Avatar.style";
 import useHeaderChange from "../../hook/useHeaderChange";
 import { useNavigate } from "react-router-dom";
 
 function Header() {
-  // const location = useLocation();
   const navigate = useNavigate();
-  // console.log(location);
+  const [search, setSearch] = useState(false);
   const subscribeHeader = useHeaderChange();
   return (
     <HeaderStyle className={subscribeHeader ? "subscribe" : ""}>
@@ -26,7 +25,8 @@ function Header() {
             </nav>
           </div>
           <div className="rightNavigation">
-            <images.nav.search />
+            {search && <Input onBlur={() => setSearch(false)} />}
+            <images.nav.search onClick={() => setSearch((prev) => !prev)} />
             <Button
               onClick={() => navigate("subscribe")}
               size="large"

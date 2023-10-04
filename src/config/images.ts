@@ -36,6 +36,11 @@ import jumanji from "../assets/movieCard/jumanji.png";
 import avatar2 from "../assets/comingSoon/avatar2.png";
 import Pause from "../assets/comingSoon/Pause";
 import check from "../assets/SubCard/check.tsx";
+import yaksha from "../assets/movieCard/yaksha.png";
+import mechanic from "../assets/movieCard/mechanic.png";
+import pirates from "../assets/movieCard/pirates.png";
+import underground from "../assets/movieCard/underground.png";
+
 export const images = {
   menu: {
     discovery: discovery,
@@ -83,6 +88,10 @@ export const images = {
     extraction,
     godzilla,
     jumanji,
+    yaksha,
+    mechanic,
+    pirates,
+    underground,
   },
   comingSoon: {
     avatar2: avatar2,

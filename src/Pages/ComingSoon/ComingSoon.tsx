@@ -8,6 +8,8 @@ import { images } from "../../config/images";
 import MovieCard, {
   MovieCardProps,
 } from "../../components/UI/MovieCard/MovieCard";
+import CorouselList from "../../components/UI/CorouselList/CorouselList";
+import CorouselListContainer from "../../components/UI/CorouselListContainer/CorouselListContainer.style";
 
 const data: ComingSoonCardProps[] = [
   {
@@ -16,7 +18,12 @@ const data: ComingSoonCardProps[] = [
     img: images.comingSoon.avatar2,
   },
   {
-    name: "Avatar 2",
+    name: "Moon Knight",
+    date: new Date(),
+    img: images.continueWatching.moonKnight,
+  },
+  {
+    name: "The Batman",
     date: new Date(),
     img: images.continueWatching.batman,
   },
@@ -51,75 +58,56 @@ const movieData: MovieCardProps[] = [
     genre: "Action",
   },
   {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
+    image: images.movieCard.underground,
+    name: "6 Underground",
+    genre: "Movie",
+    type: "Action",
     rating: 4.6,
-    type: "Movie",
-    genre: "Action",
   },
   {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
+    image: images.movieCard.pirates,
+    name: "The Pirates: The Last Royal",
+    genre: "Movie",
+    type: "Action",
     rating: 4.6,
-    type: "Movie",
-    genre: "Action",
   },
   {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
+    image: images.movieCard.mechanic,
+    name: "Mechanic: Resurrection",
     rating: 4.6,
     type: "Movie",
     genre: "Action",
   },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  // {
-  //   image: images.movieCard.extraction,
-  //   name: "extraction",
-  //   rating: 4.6,
-  //   type: "Movie",
-  //   genre: "Action",
-  // },
 ];
 function ComingSoon() {
   return (
     <ComingSoonStyle>
       <div>
         <SectionHeading>Coming Soon</SectionHeading>
-        <div className="comingsoonList">
-          {React.Children.toArray(
-            data.map((movieItem) => {
-              return <ComingSoonCard {...movieItem} />;
-            })
-          )}
-        </div>
+        <CorouselListContainer>
+          <CorouselList scrollBtn className="comingsoonList">
+            {React.Children.toArray(
+              data.map((movieItem) => {
+                return <ComingSoonCard {...movieItem} />;
+              })
+            )}
+          </CorouselList>
+        </CorouselListContainer>
       </div>
       <div>
         <SectionHeading>On 2022</SectionHeading>
-        <div className="movieList">
-          {movieData.map((movieItem) => {
-            return <MovieCard {...movieItem} key={movieItem.name} />;
-          })}
-        </div>
+        <CorouselListContainer>
+          {/* <button className="navButton left">left</button>
+          <button className="navButton right" onClick={onRightClick}>
+            right
+          </button> */}
+
+          <CorouselList scrollBtn className="movieList">
+            {movieData.map((movieItem) => {
+              return <MovieCard {...movieItem} key={movieItem.name} />;
+            })}
+          </CorouselList>
+        </CorouselListContainer>
       </div>
     </ComingSoonStyle>
   );

@@ -6,7 +6,8 @@ import { images } from "../../config/images";
 import MovieCard, {
   MovieCardProps,
 } from "../../components/UI/MovieCard/MovieCard";
-// import Corousel from "../../components/UI/Corousel/Corousel";
+import CorouselListContainer from "../../components/UI/CorouselListContainer/CorouselListContainer.style";
+import CorouselList from "../../components/UI/CorouselList/CorouselList";
 const data: CardProps[] = [
   {
     image: images.topMovies.redemption,
@@ -64,54 +65,64 @@ const movieData: MovieCardProps[] = [
     genre: "Action",
   },
   {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
+    image: images.movieCard.yaksha,
+    name: "Yaksha: Ruthless Operations",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+  {
+    image: images.movieCard.pirates,
+    name: "The Pirates: The Last Royal",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+];
+
+const secondMovieData: MovieCardProps[] = [
+  {
+    image: images.movieCard.yaksha,
+    name: "Yaksha: Ruthless Operations",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+  {
+    image: images.movieCard.mechanic,
+    name: "Mechanic: Resurrection ",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+  {
+    image: images.movieCard.pirates,
+    name: "The Pirates: The Last Royal",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+  {
+    image: images.movieCard.underground,
+    name: "6 Underground",
+    genre: "Movie",
+    type: "Action",
+    rating: 4.6,
+  },
+  {
+    image: images.movieCard.extraction,
+    name: "extraction",
     rating: 4.6,
     type: "Movie",
     genre: "Action",
   },
   {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
+    image: images.movieCard.godzilla,
+    name: "godzilla: King of the Monsters",
     rating: 4.6,
     type: "Movie",
     genre: "Action",
   },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  {
-    image: images.movieCard.jumanji,
-    name: "jumanji: The Next Level",
-    rating: 4.6,
-    type: "Movie",
-    genre: "Action",
-  },
-  // {
-  //   image: images.movieCard.extraction,
-  //   name: "extraction",
-  //   rating: 4.6,
-  //   type: "Movie",
-  //   genre: "Action",
-  // },
 ];
 function TopRated() {
   return (
@@ -131,17 +142,20 @@ function TopRated() {
       </div>
       <div>
         <SectionHeading>Best of Action</SectionHeading>
-        <div className="movieList">
-          {movieData.map((movieItem) => {
-            return <MovieCard {...movieItem} key={movieItem.name} />;
-          })}
-        </div>
-        <div className="movieList">
-          {/* <Corousel items={movieData} Component={MovieCard} /> */}
-          {movieData.map((movieItem) => {
-            return <MovieCard {...movieItem} key={movieItem.name} />;
-          })}
-        </div>
+        <CorouselListContainer>
+          <CorouselList scrollBtn className="movieList">
+            {movieData.map((movieItem) => {
+              return <MovieCard {...movieItem} key={movieItem.name} />;
+            })}
+          </CorouselList>
+        </CorouselListContainer>
+        <CorouselListContainer>
+          <CorouselList scrollBtn className="movieList">
+            {secondMovieData.map((movieItem) => {
+              return <MovieCard {...movieItem} key={movieItem.name} />;
+            })}
+          </CorouselList>
+        </CorouselListContainer>
       </div>
     </TopRatedStyle>
   );

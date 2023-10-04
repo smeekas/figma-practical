@@ -1,8 +1,9 @@
 import React from "react";
 
-function Search() {
+function Search(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="21"
       height="21"
       viewBox="0 0 21 21"

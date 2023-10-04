@@ -11,7 +11,7 @@ const DiscoveryStyle = styled.div`
     display: flex;
     padding-left: 32px;
     padding-right: 32px;
-
+    overflow: hidden;
     /* background-color: beige; */
     flex-direction: column;
   }
@@ -35,7 +35,7 @@ const DiscoveryStyle = styled.div`
   }
   .movieList {
     display: flex;
-    /* margin-top: 24px; */
+    margin-top: 24px;
     flex-direction: column;
     gap: 24px;
     /* border: 3px solid gold; */
@@ -53,20 +53,9 @@ const DiscoveryStyle = styled.div`
     margin-top: 28px;
   }
   .watchingList {
-    display: flex;
+    /* display: flex; */
     gap: 24px;
-    flex-direction: row;
-  }
-  .watchingList > div {
-    overflow: hidden;
-    border-radius: 16px;
-  }
-  .watchingList > div > img {
-    transition: all 0.2s;
-    cursor: pointer;
-  }
-  .watchingList > div > img:hover {
-    scale: 1.1;
+    /* flex-direction: row; */
   }
 `;
 export default DiscoveryStyle;

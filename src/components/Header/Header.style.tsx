@@ -35,14 +35,27 @@ const HeaderStyle = styled.header`
   }
   nav {
     display: flex;
-
     gap: 36px;
+  }
+  nav p {
+    padding: 12px 24px;
+    /* background-color: red; */
+    border-radius: 12px;
+
+    transition: all 0.2s;
+  }
+  nav p:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.theme.lightPrimary};
+    color: ${(props) => props.theme.primary};
   }
   .avatarContainer {
     display: flex;
     align-items: center;
   }
-  svg {
+  .rightNavigation svg {
+    width: 24px;
+    height: 24px;
     stroke: ${(props) => props.theme.gray100};
   }
 `;

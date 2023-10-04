@@ -7,7 +7,9 @@ export const Providers = ({ children }: { children: React.ReactElement }) => {
   const theme = useColorMode();
   return (
     <ConfigProvider theme={getAntdGlobal(theme.mode)}>
-      <ThemeProvider theme={getAllColors(theme.mode)}>{children}</ThemeProvider>
+      <ThemeProvider theme={{ mode: theme.mode, ...getAllColors(theme.mode) }}>
+        {children}
+      </ThemeProvider>
     </ConfigProvider>
   );
 };
