@@ -3,10 +3,8 @@ import { images } from "../../config/images";
 import Menu from "../UI/Menu/Menu.style";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useColorMode } from "../../providers/ColorMode";
-type SidebarProps = {
-  onOpen: () => void;
-};
-function Sidebar(props: SidebarProps) {
+
+function Sidebar() {
   const navigate = useNavigate();
   const location = useLocation();
   const colorMode = useColorMode();
@@ -75,9 +73,6 @@ function Sidebar(props: SidebarProps) {
       onClick={(e) => {
         if (e.key === "darkMode") {
           colorMode.setMode();
-          return;
-        } else if (e.key === "download") {
-          props.onOpen();
           return;
         }
         navigate(e.key);
